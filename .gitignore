@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
 # Add by Kinphar,Neurlink
-.idea
+#.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

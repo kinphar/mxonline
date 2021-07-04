@@ -30,6 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
@@ -39,6 +40,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="MxOnline.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -70,7 +72,7 @@
       <workItem from="1625066940611" duration="1005000" />
       <workItem from="1625142743966" duration="6000" />
       <workItem from="1625281764709" duration="1303000" />
-      <workItem from="1625283858644" duration="138000" />
+      <workItem from="1625283858644" duration="3885000" />
     </task>
     <servers />
   </component>
@@ -78,6 +80,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1342" height="382" key="GridCell.Tab.0.bottom" timestamp="1625367068622">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1342" height="382" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1625367068622" />
+    <state width="1342" height="382" key="GridCell.Tab.0.center" timestamp="1625367068622">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1342" height="382" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1625367068622" />
+    <state width="1342" height="382" key="GridCell.Tab.0.left" timestamp="1625367068622">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1342" height="382" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1625367068622" />
+    <state width="1342" height="382" key="GridCell.Tab.0.right" timestamp="1625367068622">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1342" height="382" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1625367068622" />
     <state x="1310" y="346" key="SettingsEditor" timestamp="1625283996649">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
