@@ -6,6 +6,7 @@ from apps.courses.models import Course, Lesson, Video, CourseResource
 class GlobalSettings(object):
     site_title = "Neurlink后台管理系统"
     site_footer = "Neurlink Co.,Ltd."
+    menu_style = "accordion"
 
 
 class BaseSettings(object):
