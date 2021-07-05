@@ -3,6 +3,16 @@ import xadmin
 from apps.courses.models import Course, Lesson, Video, CourseResource
 
 
+class GlobalSettings(object):
+    site_title = "Neurlink后台管理系统"
+    site_footer = "Neurlink Co.,Ltd."
+
+
+class BaseSettings(object):
+    enable_themes = True
+    use_bootswatch = True
+
+
 class CourseAdmin(object):
     list_display = ["name", "desc", "detail", "degree", "learn_times", "students"]
     search_fields = ["name", "desc", "detail", "degree", "students"]
@@ -31,4 +41,7 @@ xadmin.site.register(Course, CourseAdmin)
 xadmin.site.register(Lesson, LessonAdmin)
 xadmin.site.register(Video, VideoAdmin)
 xadmin.site.register(CourseResource, CourseResourceAdmin)
+
+xadmin.site.register(xadmin.views.CommAdminView, GlobalSettings)
+xadmin.site.register(xadmin.views.BaseAdminView, BaseSettings)
 
