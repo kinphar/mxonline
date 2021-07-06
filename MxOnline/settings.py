@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'apps.operations.apps.OperationsConfig',
     'apps.users.apps.UsersConfig',
     'apps.organizations.apps.OrganizationsConfig',
+    'apps.customers.apps.CustomerConfig',
+    'apps.products.apps.ProductsConfig',
     'crispy_forms',
     'xadmin.apps.XAdminConfig',
 ]
