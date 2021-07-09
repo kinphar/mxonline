@@ -26,7 +26,7 @@ class KeyPerson(BaseModel):
     position = models.CharField(verbose_name="职位", max_length=50, default="未知")
     come_from = models.CharField(verbose_name="哪里人", max_length=50, blank=True)
     age = models.IntegerField(verbose_name="年龄", default=18, blank=True)
-    desc = models.CharField(verbose_name="备注", max_length=100, blank=True, default="")
+    desc = models.CharField(verbose_name="备注", max_length=60, blank=True, default="")
     image = models.ImageField(upload_to="customers/%Y/%m", verbose_name="照片", max_length=100, blank=True)
 
     class Meta:
@@ -46,12 +46,23 @@ STATUS_CHOICES = (
     ("ycj", "已成交"),
 )
 
+SOURCE_CHOICES = (
+    ("baidu", "百度"),
+    ("douyin", "抖音"),
+    ("synology", "群晖厂家"),
+    ("shiwei", "世伟总代"),
+    ("jieshao", "介绍"),
+    ("unknown", "未知"),
+)
+
 
 class Opportunity(BaseModel):
     company = models.ForeignKey(Company, on_delete=models.CASCADE, verbose_name="购买方")
     person = models.ForeignKey(KeyPerson, on_delete=models.CASCADE, verbose_name="关键人物")
+    source = models.CharField(default="unknown", verbose_name="项目来源", max_length=10, choices=SOURCE_CHOICES)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="产品配置")
     status = models.CharField(default="wbb", verbose_name="状态", max_length=4, choices=STATUS_CHOICES)
+    desc = models.CharField(verbose_name="备注", max_length=100, blank=True, default="")
 
     class Meta:
         verbose_name = "销售机会"

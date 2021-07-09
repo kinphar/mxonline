@@ -1,6 +1,6 @@
 import xadmin
 
-from apps.products.models import Product
+from apps.products.models import Product, ProductList
 
 
 class ProductAdmin(object):
@@ -10,5 +10,14 @@ class ProductAdmin(object):
     list_editable = ["name", "manufacturer", "parameter", "stock"]
 
 
+class ProductListAdmin(object):
+    list_display = ["num"]
+    search_fields = ["num"]
+    list_filter = ["num"]
+    list_editable = ["num"]
+
+
 xadmin.site.register(Product, ProductAdmin)
+xadmin.site.register(ProductList, ProductListAdmin)
+
 

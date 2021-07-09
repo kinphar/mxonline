@@ -18,10 +18,12 @@ class KeyPersonAdmin(object):
 
 
 class OpportunityAdmin(object):
-    list_display = ["company", "person", "product", "status", "add_time"]
+    list_display = ["company", "person", "product", "source", "status", "add_time", "desc"]
     search_fields = ["company", "person", "product", "status"]
     list_filter = ["person__name", "status"]
-    list_editable = ["company", "product", "status"]
+    list_editable = ["company", "product", "source", "status", "desc"]
+    list_export = ('xls', 'xml', 'json')
+    list_export_fields = ('company', 'person', 'product', 'status', "add_time", "desc")
 
 
 xadmin.site.register(Opportunity, OpportunityAdmin)
