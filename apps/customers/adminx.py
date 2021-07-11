@@ -4,7 +4,7 @@ from apps.customers.models import Company, KeyPerson, Opportunity
 
 
 class CompanyAdmin(object):
-    list_display = ["name", "category", "address", "add_time"]
+    list_display = ["name", "category", "address", "add_time", "desc"]
     search_fields = ["name", "category"]
     list_filter = ["name", "category"]
     list_editable = ["name", "category"]

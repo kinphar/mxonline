@@ -9,7 +9,7 @@ class Company(BaseModel):
     address = models.CharField(verbose_name="公司地址", max_length=150)
     desc = models.TextField(verbose_name="备注", max_length=100, blank=True, default="")
     category = models.CharField(default="zd", verbose_name="类型", max_length=3,
-                                choices=(("zd", "终端客户"), ("jcs", "集成商")))
+                                choices=(("zd", "终端客户"), ("jcs", "集成商"), ("fx", "分销客户")))
 
     class Meta:
         verbose_name = "目标公司"
